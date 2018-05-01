@@ -33,6 +33,7 @@ class Recaptcha
             'public_key' => value($this->config['public_key']),
             'options'    => $mergedOptions,
             'dataParams' => $this->extractDataParams($mergedOptions),
+            // 'jsincluded' => false
         ];
 
         if (array_key_exists('lang', $mergedOptions) && "" !== trim($mergedOptions['lang'])) {

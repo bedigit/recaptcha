@@ -1,6 +1,7 @@
 <?php namespace Greggilbert\Recaptcha;
 
 use Illuminate\Support\ServiceProvider;
+use View;
 
 /**
  * Service provider for the Recaptcha class
@@ -50,6 +51,8 @@ class RecaptchaServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        View::share('jsincluded', false);
+        
         $this->bindRecaptcha();
         $this->handleConfig();
     }
