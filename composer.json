@@ -1,5 +1,5 @@
 {
-    "name": "bedigit/recaptcha",
+    "name": "bedigit/recaptcha-old",
     "description": "reCAPTCHA Validator for Laravel 5",
 	"keywords": ["recaptcha", "captcha", "laravel", "laravel5", "larapen"],
 	"homepage": "http://github.com/greggilbert/recaptcha",
